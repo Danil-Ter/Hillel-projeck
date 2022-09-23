@@ -1,0 +1,146 @@
+.footer {
+    background-color: $grey-bg;
+    padding-bottom: 30px;
+
+}
+.footer__box {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    border-top: 2px solid $grey-Separator;
+}
+.footer__adress {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 4px;
+    color: $main;
+}
+.footer__map {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $blue;
+    text-decoration: none;
+}
+.footer__phone {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: $main;
+    text-decoration: none;
+}
+.footer__mail {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: $blue;
+    text-decoration: none;
+}
+.footer__mail:hover {
+    cursor: pointer;
+    color: $accent;
+}
+.footer__top {
+padding-bottom: 21px;
+padding-top: 30px;
+}
+.footer__centr {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+}
+.footer__fb {
+    padding-bottom: 10px;
+    margin: 0 auto;
+    text-decoration: none;
+}
+.footer__fb :hover path {
+    fill: $accent;
+}
+.footer__phone {
+    padding-bottom: 10px;
+}
+.footer__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: $grey-text;
+}
+@media (min-width: 768px) {
+    .footer__box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, min-content);
+    }
+    .footer__top {
+        display: flex;
+        align-items: center;
+         padding-bottom: 16px;
+        padding-top: 27px;
+        
+    }
+    .footer__centr{
+        grid-column: 1/-1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    
+    }
+    .footer__fb {
+        margin: 0;
+        padding: 0;
+    }
+    .footer__phone {
+        padding: 0 25px;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    .footer__phone::before {
+        content: '';
+        width: 6px;
+        height: 6px;
+        background: $grey-text;
+        border-radius: 50%;
+        display: inline-flex;
+        text-align: center;
+        left: 6px;
+        position: absolute;
+    }
+    .footer__phone::after {
+        content: '';
+        width: 6px;
+        height: 6px;
+        background: $grey-text;
+        border-radius: 50%;
+        display: inline-flex;
+        text-align: center;
+        right: 6px;
+        position: absolute;
+    }
+    .footer__adress{
+        padding-right: 10px;
+    }
+    .footer__text {
+        grid-column: 2 / 3;
+        grid-row: 1 / 1;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-top: 10px;
+    }
+    .footer__map::before {
+        content: '';
+        width: 6px;
+        height: 6px;
+        background: $grey-text;
+        border-radius: 50%;
+        display: inline-flex;
+        text-align: center;
+        margin-right: 10px;
+    }
+}

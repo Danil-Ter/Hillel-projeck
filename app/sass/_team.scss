@@ -1,0 +1,117 @@
+.team {
+    padding-bottom: 30px;
+    padding-top: 50px;
+}
+.team__box {
+    border-radius: 12px;
+    background-color: #F5F5FA;
+}
+.team__pic {
+    object-fit: cover;
+    height: 500px;
+    width: 100%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.team__pic:hover  {
+    cursor: pointer;
+    transition: 1s;
+    scale: 1.1;
+}
+.team__text {
+padding: 30px 30px;
+}
+.team__speak {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $blue;
+    display: inline-flex;
+    text-decoration: none;
+}
+.team__speak::after {
+    content: '';
+    background-image: url(../img/public/public-arrov.svg);
+    width: 8px;
+    height: 11px;
+    margin-left: 5px;
+    margin-top: 2px;
+}
+.team__title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    background: $Gradient-red-text;
+    background-clip: text;
+    color: transparent;
+    background-clip: text;
+    padding-bottom: 30px;
+}
+.team__name {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: $grey-text;
+    padding-bottom: 6px;
+}
+.team__pos {
+    font-weight: 400;
+font-size: 14px;
+line-height: 22px;
+color: $grey-text;
+}
+.team__remote {
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+}
+.team__btn  {
+    width: 16px;
+    height: 16px;
+    background: $blue;
+    opacity: 0.2;
+    border: transparent;
+    border-radius: 50%;
+    order: 1;
+    margin: 0 8px;
+}
+.team__btn-act {
+    width: 16px;
+    height: 16px;
+    background: $blue;
+    order: 0;
+    flex-grow: 0;
+    opacity: 1;
+}
+
+
+
+@media (min-width: 768px) {
+    .team__title {
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 46px;
+    }
+    .team {
+        padding-top: 82px;
+    }
+}
+@media (min-width: 1025px) {
+    .team__box {
+        display: flex;
+    }
+    .team__pic {
+        width: 400px;
+        height: 528px;
+        border-radius: 12px 0 0 12px;
+    }
+}
+@media (min-width: 1440px) {
+    .team__pic {
+        width: 400px;
+        height: 345px;
+        border-radius: 12px 0 0 12px;
+    }
+}

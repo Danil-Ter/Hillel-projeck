@@ -1,0 +1,45 @@
+.back {
+    background: $Gradient-supersoft;
+    border-radius: 0px 0px 12px 12px;
+    position: relative;
+}
+.fon {
+    background-image: url(../img/background/Symbol-mob.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.back::after {
+    content: '';
+    height: 10px;
+    background-color:#CACADB;
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: -10px;
+    border-radius: 0px 0px 12px 12px;
+}
+.back::before {
+    content: '';
+    height: 10px;
+    background: #E7E7F2;
+    position: absolute;
+    left: 40px;
+    right: 40px;
+    bottom: -20px;
+    border-radius: 0px 0px 12px 12px;
+}
+@media (min-width: 768px) {
+    .fon {
+        background-image: url(../img/background/Symbol-plan.svg);
+    }
+}
+@media (min-width: 1025px) {
+    .fon {
+        background-image: url(../img/background/Symbol-hd.svg);
+    }
+}
+@media (min-width: 1025px) {
+    .fon {
+        background-image: url(../img/background/Symbol-deks.svg);
+    }
+}
